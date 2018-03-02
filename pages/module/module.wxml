@@ -1,0 +1,7 @@
+<!--pages/module/module.wxml-->
+<scroll-view scroll-y bindscrolltolower="bindscrolltolower" style="height:{{windowHeight}}px">
+  <view class="module-title-box">{{title}}</view>
+  <view class="main-product-box">
+    <productItem wx:for="{{list}}" wx:key="id" data="{{item}}"/>
+  </view>
+</scroll-view>

@@ -1,0 +1,61 @@
+/* pages/detail/detail.wxss */
+.swiper-box{
+  height: 640rpx;
+}
+.detail-container{
+  padding: 20rpx;
+}
+.detail-title{
+  font-size: 44rpx;
+}
+.detail-price{
+  font-size: 38rpx;
+  color: #c22731;
+  margin-top: 20rpx;
+}
+.detail-oldprice{
+  color: #999;
+  display: inline-block;
+  margin-left: 10rpx;
+  font-size: 30rpx;
+  text-decoration:line-through;
+}
+.detail-sale{
+  float: right;
+  color: #999;
+  font-size: 30rpx;
+}
+.detail-sale .span{
+  display: inline-block;
+  color: #c22731;
+  padding: 0 10rpx;
+}
+.car-box{
+  position: fixed;
+  bottom: 0;
+  height: 100rpx;
+  left: 0;
+  right: 0;
+  background: #fff;
+  box-shadow: 0 0 10rpx rgba(0,0,0,.3);
+  text-align: right;
+}
+.car-box view{
+  display: inline-block;
+  height: 100%;
+  line-height: 100rpx;
+  padding: 0 20rpx;
+  font-size: 32rpx;
+}
+.car-box .go{
+  float: left;
+  color: #666;
+  font-size: 28rpx;
+}
+.car-box .add{
+  color: #c22731;
+}
+.car-box .buy{
+  color: #fff;
+  background: #c22731;
+}

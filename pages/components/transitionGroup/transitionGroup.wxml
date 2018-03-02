@@ -1,0 +1,4 @@
+<!--pages/components/transitionGroup/transitionGroup.wxml-->
+<view wx:if="{{wxIf}}" class="{{name + ' ' + enter + ' ' + enterActive + ' ' + leave + ' ' + leaveActive}}">
+    <slot></slot>
+</view>

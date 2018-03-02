@@ -1,0 +1,19 @@
+<!--pages/components/calendar/calendar.wxml-->
+<view class="calendar-area">
+  <view class='calendar-box'>
+    <view class="calendar-title">{{calendarInfo}}</view>
+    <view class="caleadar-item header">日</view>
+    <view class="caleadar-item header">一</view>
+    <view class="caleadar-item header">二</view>
+    <view class="caleadar-item header">三</view>
+    <view class="caleadar-item header">四</view>
+    <view class="caleadar-item header">五</view>
+    <view class="caleadar-item header">六</view>
+    <view class="caleadar-item" wx:for="{{calendarList}}" wx:key="index" wx:for-index="index" wx:for-item="item">
+     <view class="day">{{item.day}}</view>
+     <transitionGroup name="smoke-num" isShow="{{smokeList[item.id]}}" timeout="500">
+      {{smokeList[item.id]}}
+     </transitionGroup>
+    </view>
+  </view>
+</view>

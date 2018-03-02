@@ -1,0 +1,124 @@
+/**app.wxss**/
+view {
+  box-sizing: border-box;
+  font-weight: 300;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  font-size: 36rpx;
+} 
+
+.main-product-title{
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-top: 20rpx;
+}
+.main-product-more{
+  position: absolute;
+  color: #01c1fc;
+  font-size: 28rpx;
+  top: 5rpx;
+  right: 30rpx;
+}
+.main-product-box{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20rpx 10rpx 30rpx;
+  margin-bottom: 30rpx;
+  border-bottom: 1px solid #efefef;
+}
+
+.swiper-box{
+  width: 100%;
+  height:465rpx;
+}
+.swiper-img{
+  width: 100%;
+  height: 100%;
+}
+
+/** 动画组件样式 **/
+.smoke-num{
+  position: absolute;
+  bottom: 4rpx;
+  right: 4rpx;
+  width: 24rpx;
+  height: 24rpx;
+  background: #F56C6C;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  line-height: 24rpx;
+  transition: opacity .2s, transform cubic-bezier(.17,.67,.33,1.53) .5s;
+}
+.smoke-num.smoke-num-enter, .smoke-num.smoke-num-leave-active{
+  opacity: 0;
+  transform: scale(0);
+}
+.smoke-num.smoke-num-enter-active{
+  opacity: 1;
+  transform: scale(1);
+}
+
+.modal-box{
+  position: absolute;
+  top: 120rpx;
+  left: 50%;
+  width: 600rpx;
+  margin-left: -300rpx;
+  background: #fff;
+  padding: 0 30rpx 30rpx;
+  z-index: 99;
+  box-shadow: 0 0 30rpx rgba(0, 0, 0, .3);
+  border-radius: 10rpx;
+  transition: opacity .3s, top cubic-bezier(.17,.67,.34,1.26) .8s;
+}
+.modal-box .title{
+  border-bottom: 1px solid #999;
+  padding-bottom: 20rpx;
+}
+.modal-bg{
+  position: absolute;
+  z-index: 98;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .3);
+  transition: .5s;
+}
+._modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+._modal._modal-enter view:last-child{
+  opacity: 0;
+  top: -100%;
+}
+._modal._modal-leave view:last-child,._modal._modal-enter-active view:last-child{
+  opacity: 1;
+  top: 120rpx;
+}
+._modal._modal-leave-active view:last-child{
+  opacity: 0;
+  top: -100%;
+}
+
+._modal._modal-enter view:first-child{
+  opacity: 0;
+}
+._modal._modal-leave view:first-child,._modal._modal-enter-active view:first-child{
+  opacity: 1;
+}
+._modal._modal-leave-active view:first-child{
+  opacity: 0;
+}

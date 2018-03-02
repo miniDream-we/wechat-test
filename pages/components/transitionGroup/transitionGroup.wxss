@@ -1,0 +1,2 @@
+/* pages/components/transitionGroup/transitionGroup.wxss */
+@import "../../../app.wxss";

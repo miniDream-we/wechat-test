@@ -1,0 +1,10 @@
+<!--pages/components/productItem/productItem.wxml-->
+<view class="product-item" bindtap='bindtap'>
+  <view class="product-img">
+    <image lazy-load="{{true}}" mode="aspectFill" src="{{data.imgUrl}}"/>
+  </view>
+  <view class="product-title">{{data.title}}</view>
+  <view class="product-price">￥{{data.price}}
+    <view class="aside">{{data.oldPrice}}</view>
+  </view>
+</view>

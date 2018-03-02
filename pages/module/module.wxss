@@ -1,0 +1,9 @@
+/* pages/module/module.wxss */
+.module-title-box{
+  height: 300rpx;
+  line-height: 300rpx;
+  text-align: center;
+  background: #5c60a1;
+  color: #fff;
+  font-size: 50rpx;
+}

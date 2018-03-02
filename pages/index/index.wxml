@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view >
+  <view class="container">
+    <view class='search-box {{scrollTop > 50 ? "active" : ""}}'>
+      <input type="text" placeholder='点击搜索你想要的商品' />
+    </view>
+    <swiper class="swiper-box" autoplay="{{true}}" indicator-dots="{{true}}"
+      indicator-color="rgba(255,255,255,.3)" indicator-active-color="rgba(255,255,255,.7)"
+    >
+      <block wx:for="{{bannerList}}" wx:key="id">
+        <swiper-item>
+          <image class="swiper-img" lazy-load="{{true}}" data-id="{{item.id}}" mode="aspectFill" src="{{item.url}}"/>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="main-module-box">
+      <view class="main-module-item" wx:for="{{moduleList}}" wx:key="id" style="background: {{item.color}}">
+        {{item.text}}
+      </view>
+    </view>
+    <block wx:for="{{products}}" wx:key="id">
+      <view class="main-product-title">{{item.title}}
+        <view class="main-product-more" bindtap='moreTap' data-productid="{{item.title}}">更多</view>
+      </view>
+      <view class="main-product-box">
+        <productItem wx:for="{{item.list}}" wx:key="id" data="{{item}}"/>
+      </view>
+    </block>
+  </view>
+</view>

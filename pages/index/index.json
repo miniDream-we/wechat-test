@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "首页",
+  "usingComponents":{
+    "transitionGroup": "../components/transitionGroup/transitionGroup",
+    "productItem": "../components/productItem/productItem"
+  }
+}

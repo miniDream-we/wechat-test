@@ -1,0 +1,42 @@
+/**index.wxss**/
+.search-box{
+  position: fixed;
+  height: 100rpx;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  transition: .4s;
+}
+.search-box input{
+  height: 70rpx;
+  margin: 15rpx 80rpx;
+  border-radius: 35rpx;
+  padding: 0 30rpx;
+  font-size: 28rpx;
+  background: #fff;
+  transition: .4s;
+}
+.search-box.active{
+  background: #fff;
+  box-shadow: 0 0 20rpx rgba(0,0,0,.4)
+}
+.search-box.active input{
+  background: #eee;
+}
+.main-module-box{
+  margin: 20rpx 5rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1px solid #efefef
+}
+.main-module-item{
+  display: inline-block;
+  width: 164rpx;
+  margin: 10rpx;
+  font-size: 28rpx;
+  background: red;
+  color: #fff;
+  text-align: center;
+  padding: 10rpx 0;
+  border-radius: 5rpx;
+}

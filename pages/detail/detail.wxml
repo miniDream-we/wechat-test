@@ -1,0 +1,26 @@
+<!--pages/detail/detail.wxml-->
+<view>
+  <swiper class="swiper-box" autoplay="{{false}}" indicator-dots="{{true}}"
+      indicator-color="rgba(255,255,255,.3)" indicator-active-color="rgba(255,255,255,.7)"
+    >
+      <block wx:for="{{imgList}}" wx:key="id">
+        <swiper-item>
+          <image class="swiper-img" lazy-load="{{true}}" data-id="{{item.id}}" mode="aspectFill" src="{{item.url}}"/>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="detail-container">
+      <view class="detail-title">{{title}}</view>
+      <view class="detail-price">
+        {{price}}
+        <view class="detail-oldprice">{{oldPrice}}</view>
+        <view class="detail-sale">已售出<view class="span">{{hasSale}}</view>件</view>
+      </view>
+    </view>
+
+    <view class="car-box">
+      <view class="go">去购物车</view>
+      <view class="add">加入购物车</view>
+      <view class="buy">立即购买</view>
+    </view>
+</view>

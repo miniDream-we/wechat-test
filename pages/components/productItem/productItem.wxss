@@ -1,0 +1,32 @@
+/* pages/components/productItem/productItem.wxss */
+.product-item{
+  width: 222rpx;
+  margin: 10rpx;
+}
+.product-img{
+  width: 222rpx;
+  height: 222rpx;
+}
+.product-img image{
+  width: 100%;
+  height: 100%;
+}
+.product-title{
+  font-size: 28rpx;
+  margin-top: 8rpx;
+  line-height: 1.2;
+  height: 60rpx;
+  overflow: hidden;
+  color: #666;
+}
+.product-price{
+  font-size: 30rpx;
+  color: #c22731;
+}
+.product-price .aside{
+  color: #999;
+  display: inline-block;
+  margin-left: 10rpx;
+  font-size: 24rpx;
+  text-decoration:line-through;
+}
