@@ -1,6 +1,9 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/classify/index",
+    "pages/shopCart/index",
+    "pages/my/index",
     "pages/module/module",
     "pages/detail/detail"
   ],
@@ -23,13 +26,13 @@
         "text": "首页"
       },
       {
-        "pagePath": "pages/my/index",
+        "pagePath": "pages/classify/index",
         "iconPath": "images/main/cag.png",
         "selectedIconPath": "images/main/cag-a.png",
         "text": "分类"
       },
       {
-        "pagePath": "pages/shop-cart/index",
+        "pagePath": "pages/shopCart/index",
         "iconPath": "images/main/car.png",
         "selectedIconPath": "images/main/car-a.png",
         "text": "购物车"
